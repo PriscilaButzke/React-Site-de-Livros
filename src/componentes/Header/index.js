@@ -4,7 +4,7 @@ import OpcoesHeader from '../OpcoesHeader';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-    background-color: #F6830F;
+    background-color: #ffff;
     padding: 5px;
     display: flex;
     justify-content: space-around;

@@ -8,11 +8,14 @@ const LogoContainer = styled.div`
 const LogoImg = styled.img`
     margin-right: 8px;
 `
+const P = styled.p`
+    padding-top: 20px;
+`
 function Logo() {
     return (
         <LogoContainer>
             <LogoImg src={logo} alt='logo'/>
-            <p><strong>My Book</strong></p>
+            <P><strong>My Book</strong></P>
         </LogoContainer>
     )
 }

@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const Opcoes = styled.ul`
     display: flex;  
+    padding-top: 18px;
 `
 const Opcao = styled.li`
     min-width: 120px;
@@ -13,7 +14,7 @@ const Opcao = styled.li`
     padding: 0 5px;
     cursor: pointer;
 `
-const textOpcoes = ['CATEGORIAS', 'FAVORITOS','MINHA ESTANTE']
+const textOpcoes = ['Categorias', 'Favotitos','Minha estante']
 function OpcoesHeader (){
     return (
         <Opcoes>

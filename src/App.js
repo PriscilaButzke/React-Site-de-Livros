@@ -3,22 +3,20 @@ import styled from 'styled-components';
 import Pesquisa from './componentes/Pesquisa';
 
 const AppContainer = styled.div`
-.App {
   width: 100vw;
   height: 100vh;
-  background-image: #bfc0bd;
-}
-li{
-  list-style: none;
-}
+  background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
+    li{
+      list-style: none;
+    }
 `
 function App() {
   return (
     <AppContainer>
-      <Header/>
-      <Pesquisa/>
+      <Header />
+      <Pesquisa />
     </AppContainer>
-      
+
   );
 }
 

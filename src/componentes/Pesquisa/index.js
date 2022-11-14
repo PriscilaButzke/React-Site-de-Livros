@@ -9,9 +9,7 @@ const PesquisaContainer = styled.section`
     background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
     color: #FFF;
     text-align: center;
-    padding: 85px 0;
-    height: 470px;
-  
+    padding-top: 70px;
 `
 const Titulo = styled.h2`
     color: #FFF;
@@ -22,14 +20,15 @@ const Titulo = styled.h2`
 const Subtitulo = styled.h3`
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 `
 const Resultado = styled.div`
     display: flex;
     justify-content: space-around;
-    margin-top: 32px;
+    margin-top: 45px;
+    margin-bottom: 0px;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 40px;
     flex-wrap: wrap; 
    
 `
@@ -52,12 +51,14 @@ function Pesquisa() {
     const [livrosPesquisados, setLivrosPesquisados] = useState([])
 
     return (
+
+
         <PesquisaContainer>
             <Titulo>Já sabe por onde começar?</Titulo>
             <Subtitulo>Encontre seu livro em nossa estante.</Subtitulo>
             <Input
                 placeholder="Escreva sua próxima leitura"
-                onBlur={evento => {
+                onChange={evento => {
                     const textoDigitado = evento.target.value
 
                     //onBlur é um evento, serve para capturar o momento em que o usuario digita algo no campo e clica pra fora do componente
@@ -71,14 +72,15 @@ function Pesquisa() {
                 {livrosPesquisados.map(livro => (
 
                     <LivroCard>
-                        <img src={livro.src} />
+                        <img alt='capa do livro' src={livro.src} />
                         <p>{livro.nome}</p>
                     </LivroCard>
                 ))}
             </Resultado>
-
-
         </PesquisaContainer>
+
+
+
     )
 }
 

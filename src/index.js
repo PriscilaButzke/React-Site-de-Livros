@@ -7,6 +7,7 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 
 const GlobalStyle = createGlobalStyle`
 body {
+  background-color: #EBECEE;
   margin: 0;
   -font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
